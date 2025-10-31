@@ -8,3 +8,85 @@ html, body {
  overflow:hidden;             
  font-size:12pt;
  }
+ #kopfbereich {
+
+  position:fixed;            ! Position des Kopfbereichs ist immer oben - FIX!;
+  top:0;                     ! Position oben;
+  left:0;                    ! Position ganz links;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:rgb(16,78,139);    ! Hintergrundfarbe;
+  width:100%;                ! Breite des Kopfbereichs;
+  height:100px;              ! Höhe des Kopfbereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
+}
+
+#navibereich {
+  position:fixed;            ! Position des Navibereichs immer links! - Fix;
+  top: 100px;                ! Position unterhalb des Kopfbereiches;
+  left:0;                    ! Position ganz links;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:red;      ! Hintergrundfarbe;
+  width:200px;               ! Breite des Navibereichs;
+  min-height:300px;          ! Minimal-Höhe des Navibereichs;
+  z-index:2;                 ! Navibereich überlagert andere Bereiche;
+}
+
+#textbereich {
+
+  position:fixed;            ! Position des Textbereichs immer in der Mitte!;
+  left:0;                    ! Textbereich fängt ganz links an;
+  right:0;                   ! Textbereich geht bis ganz rechts;
+  top:100px;                 ! Außenabstand zum Kopfbereich;
+  padding-left:210px;        ! Innenabstand zum Menü;
+  padding-right:210px;       ! Innenabstand zum Newsbereich;
+  padding-top:20px;          ! Innenabstand nach oben;
+  padding-bottom:60px;       ! Innenabstand nach unten;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  height:100%;               ! Höhe des Textbereiches auf 100% eingestellt;
+  overflow-y: auto;          ! Zeige Scrollbalken rechts, falls notwendig;
+  background-color:rgba(255,255,255,0.5); ! Hintergrund ist weiß mit 50 %iger Transparenz;
+}
+
+#newsbereich {
+  position:fixed;            ! Position des Newsbereichs immer rechts! - FIX;
+  right:0px;                 ! Rechtsausrichtung;
+  top: 100px;                ! Position unterhalb des Kopfbereiches;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:yellow;   ! Hintergrundfarbe;
+  width:200px;               ! Breite des Newsbereichs;
+  min-height:300px;          ! Minimal-Höhe des Newsbereichs;
+  z-index:2;                 ! Newsbereich überlagert andere Bereiche;
+}
+
+#fussbereich {
+
+ position:fixed;              ! Position des Fußbereichs immer unten!;
+ bottom:0;                    ! Unten ausgerichtet!;
+ left:0;                      ! Position ganz links;
+ border: 1px solid #ccc;      ! Rahmenart und -farbe;
+ width: 100%;                 ! Breite des Fussbereichs;
+ background-color: blue;      ! Hintergrundfarbe;
+ height:50px;                 ! Höhe des Fußbereichs;
+ z-index:2;                   ! Fußbereich überlagert andere Bereiche;  
+} 
+
+/*  Höhe des Contentbereichs festlegen (wichtig!)    */                    
+.content-block {
+  padding-bottom: 1000px;
+}
+
+/*  ----------------------------------------- */
+/*  Schriftformatierung                       */
+/*  ----------------------------------------- */
+
+p {
+font-family: Garamond, Verdana, Geneva, Lucida, Avantgarde, Arial; ! Festlegung der Schriftart;
+font-style:normal;                                                 ! Festlegung des Schrifttyps;
+font-size:11pt;                                                    ! Festlegung des Schriftgröße;
+font-weight:normal;                                                ! Festlegung der Fettschrift;
+color:#000000;                                                     ! Festlegung des Schriftfarbe;
+}
+.title {
+font-size:12pt;                                                    ! Festlegung des Schriftgröße;
+font-weight:bold;                                                  ! Festlegung der Fettschrift;
+}
