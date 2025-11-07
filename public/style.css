@@ -2,7 +2,7 @@
 /*  Übergreifend / Body                              */
 /*  -----------------------------------------        */
 html, body {
- background-image:url("");
+ background-image:url("/hintergrund_4_3.png");
  background-repeat:no-repeat; 
  background-size: cover;      
  overflow:hidden;             
