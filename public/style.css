@@ -2,7 +2,7 @@
 /*  Übergreifend / Body                              */
 /*  -----------------------------------------        */
 html, body {
- background-image:url("/hintergrund_4_3.png");
+ background-image:url("/hintergrund.png");
  background-repeat:no-repeat; 
  background-size: cover;      
  overflow:hidden;             
@@ -67,7 +67,7 @@ html, body {
  border: 1px solid #ccc;      ! Rahmenart und -farbe;
  width: 100%;                 ! Breite des Fussbereichs;
  background-color: blue;      ! Hintergrundfarbe;
- height:50px;                 ! Höhe des Fußbereichs;
+ height:40px;                 ! Höhe des Fußbereichs;
  z-index:2;                   ! Fußbereich überlagert andere Bereiche;  
 } 
 
