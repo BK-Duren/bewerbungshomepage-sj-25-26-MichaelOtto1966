@@ -170,3 +170,32 @@ font-size:90%;            	! Festlegung des Schriftgröße;
   	background-color:rgba(255,255,255,0.7);   ! Hintergrundfarbe;
 }
 
+/*  -----------------------------------------        */
+/*  Für Teaser (Blickfang)             	        */
+/*  -----------------------------------------        */
+.teaser {
+	font-weight:bold;				! setze Schriftart und -gewicht;
+	font-family:'Montserrat', sans-serif;
+	padding: 5px 5px;				! Innenabstand für den Teaser;
+	margin: 0 2px 4px 2px;			! Außenabstand nach unten zum nächsten Teaser;
+	border-bottom: 1px solid #ccc;		! unten gibt es eine Begrenzungslinie;
+}
+.teaser_date {
+	font-size:90%;                          ! etwas kleiner als die Standardschrift;
+}
+.teaser_title {
+	font-size:110%;                         ! etwas größer als die Standardschrift;
+	line-height:140%;
+}
+.teaser_text {
+        line-height: 140%;                     ! Anpassung der Zeilenhöhe;
+}
+a.teaser_link {
+padding-top: 4px;
+color:black;
+}
+.teaser_border {
+  color: #333;
+  border: 2px solid #548b54;
+}
+
