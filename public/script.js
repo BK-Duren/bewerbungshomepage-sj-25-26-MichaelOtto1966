@@ -15,3 +15,12 @@ function active_remove() {
        /* Füge Klasse Active hinzu */
        jQuery(id).addClass('active');
     }
+    /* ------------------------------------------ */
+/* -- Inhalte laden                           */
+/* -- ---------------- ---------------------- */
+   function load_content(bereich, page) {
+       let obj1 = document.getElementById(bereich);
+       $(obj1).load('/' + page, function () {
+      });
+    }
+
