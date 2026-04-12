@@ -7,6 +7,8 @@ import { dirname } from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
 import { configDotenv } from "dotenv";
+import nodemailer from "nodemailer";
+import multiparty from "multiparty";
 configDotenv();
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -51,9 +53,78 @@ app.get("/daten", (request, response) => {
 app.get("/schulbildung", (request, response) => {
   response.sendFile(`${__dirname}/views/schulbildung.html`);
 });
+// Routing der kontakt.html als /kontakt
+app.get("/kontakt", (request, response) => {
+  response.sendFile(`${__dirname}/views/kontakt.html`);
+});
 // Routing der impressum.html als /impressum
 app.get("/impressum", (request, response) => {
   response.sendFile(`${__dirname}/views/impressum.html`);
+});
+
+// *******************************
+// The E-Mail-Transport initializing
+// *******************************
+const transporter = nodemailer.createTransport({
+  host: "mail.gmx.net", //replace with your email provider - this is the host for gmx mail
+  port: 587, // this port number is usally standard
+  auth: {
+    user: process.env.EMAIL, //This is your E-Mail-Address as environment variable -> see .env
+    pass: process.env.PASS,  //This is your E-Mail-Password as environment variable -> see .env
+  },
+});
+// verify connection configuration
+//transporter.verify(function (error, success) {
+  //if (error) {
+    //return response.status(500).send("Something went wrong.");
+  //} else {
+    //return response.status(200).send("Email successfully sent to recipient!");
+ // }
+//});
+
+//Funktion für das Senden der E-Mail, hier werden alle Felder des Formulars mit den Daten "vorbereitet"
+app.post("/send", (req, res) => {
+  // Sending the E-Mail
+  let form = new multiparty.Form();
+  let data = {};
+  form.parse(req, async (err, fields) => {
+    if (err) return res.status(500).send("Formular-Fehler");
+
+    let data = {};
+    Object.keys(fields).forEach((property) => {
+      data[property] = fields[property].toString();
+    });
+    //Hier wird die E-Mail an Euch definiert. Bitten halten Sie sich genau an der vorge-gebenen Schreibweise, Info: \n ist ein Umbruch
+    const mail1 = {
+      from: process.env.EMAIL,
+      to: process.env.EMAIL,
+      subject: `Mail von der Website: ${data.reason}`,
+      text: `Name: ${data.fullname} \n E-Mail: <${data.email}> \n Nachricht: ${data.formmessage}`,
+    };
+    const mail2 = {
+      from: process.env.EMAIL,
+      to: data.email,
+      subject: `Ihre Mail von der Website: ${data.reason}`,
+      text: `Name: ${data.fullname} \n E-Mail: <${data.email}> \n Nachricht: ${data.formmessage}`,
+    };
+    //Hier werden die E-Mails abgesendet
+    try {
+      // Beide E-Mails gleichzeitig senden und auf beide warten
+      await Promise.all([
+        transporter.sendMail(mail1),
+        transporter.sendMail(mail2)
+      ]);
+
+      // Erst wenn BEIDE fertig sind, genau EINE Antwort senden
+      return res.status(200).send("Email successfully sent to recipient!");
+    } catch (error) {
+      console.error("Fehler beim Senden:", error);
+      // Falls IRGENDEINE Mail fehlschlägt
+      if (!res.headersSent) {
+        return res.status(500).send("Something went wrong.");
+      }
+    };
+  });
 });
 
 // listen for requests :)

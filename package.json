@@ -16,7 +16,9 @@
     "express-device": "^0.4.2",
     "dotenv": "^16.5.0",
     "body-parser": "^2.2.0",
-    "config.js": "^0.1.0"
+    "config.js": "^0.1.0",
+    "nodemailer": "^8.0.5",
+    "multiparty": "^4.2.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.0" 
@@ -25,7 +27,7 @@
     "node": "22.x"
   },
   "repository": {
-    "url": "https://github.com/bewerbungshomepage-with-blog"
+    "url": "https://github.com/bewerbungshomepage-with-contact"
   },
   "license": "MIT",
   "keywords": [
