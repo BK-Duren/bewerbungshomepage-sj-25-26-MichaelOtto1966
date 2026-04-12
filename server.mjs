@@ -43,6 +43,18 @@ app.get("/", (request, response) => {
 app.get("/index", (request, response) => {
   response.sendFile(`${__dirname}/views/index.html`);
 });
+// Routing der daten.html als /daten
+app.get("/daten", (request, response) => {
+  response.sendFile(`${__dirname}/views/daten.html`);
+});
+// Routing der schulbildung.html als /schulbildung
+app.get("/schulbildung", (request, response) => {
+  response.sendFile(`${__dirname}/views/schulbildung.html`);
+});
+// Routing der impressum.html als /impressum
+app.get("/impressum", (request, response) => {
+  response.sendFile(`${__dirname}/views/impressum.html`);
+});
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, () => {
