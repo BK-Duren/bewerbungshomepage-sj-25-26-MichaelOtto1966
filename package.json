@@ -16,7 +16,15 @@
     "express-device": "^0.4.2",
     "dotenv": "^16.5.0",
     "body-parser": "^2.2.0",
-    "config.js": "^0.1.0"
+    "config.js": "^0.1.0",
+    "nodemailer": "^8.0.5",
+    "multiparty":"^4.2.3",
+    "cors": "^2.8.6",
+    "ejs": "^5.0.2",
+    "markdown-it": "^14.1.1",
+    "canvas": "^3.2.3",
+    "gray-matter": "^4.0.3",
+    "zero-md": "^3.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.0" 
