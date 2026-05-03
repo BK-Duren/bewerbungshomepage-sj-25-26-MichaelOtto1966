@@ -15,7 +15,7 @@ html, body {
   top:0;                     ! Position oben;
   left:0;                    ! Position ganz links;
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
-  background-color:rgba(30,144,255,0.5);    ! Hintergrundfarbe;
+  background-color:red;    ! Hintergrundfarbe;
   width:100%;                ! Breite des Kopfbereichs;
   height:100px;              ! Höhe des Kopfbereichs;
   z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
@@ -40,7 +40,7 @@ html, body {
   top: 100px;                ! Position unterhalb des Kopfbereiches;
   left:0;                    ! Position ganz links;
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
-  background-color:rgba(30,144,255,0.5);      ! Hintergrundfarbe;
+  background-color:red;      ! Hintergrundfarbe;
   width:200px;               ! Breite des Navibereichs;
   min-height:300px;          ! Minimal-Höhe des Navibereichs;
   z-index:2;                 ! Navibereich überlagert andere Bereiche;

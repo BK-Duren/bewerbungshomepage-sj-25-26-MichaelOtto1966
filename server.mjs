@@ -33,7 +33,6 @@ app.all("*", checkHttps);
 // Die statischen Seiten in public und content werden als "statisch" definiert. So können Sie direkt adressiert werden.
 app.use(express.static("public"));
 app.use(express.static("assets"));
-app.use(express.static("content"));
 
 // This is the basic-routing
 app.get("/", (request, response) => {
@@ -42,18 +41,6 @@ app.get("/", (request, response) => {
 // Routing der index.html als /index
 app.get("/index", (request, response) => {
   response.sendFile(`${__dirname}/views/index.html`);
-});
-// Routing der daten.html als /daten
-app.get("/daten", (request, response) => {
-  response.sendFile(`${__dirname}/views/daten.html`);
-});
-// Routing der schulbildung.html als /schulbildung
-app.get("/schulbildung", (request, response) => {
-  response.sendFile(`${__dirname}/views/schulbildung.html`);
-});
-// Routing der impressum.html als /impressum
-app.get("/impressum", (request, response) => {
-  response.sendFile(`${__dirname}/views/impressum.html`);
 });
 
 // listen for requests :)
