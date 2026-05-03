@@ -2,7 +2,7 @@
 /*  Übergreifend / Body                              */
 /*  -----------------------------------------        */
 html, body {
- background-image:url("/hintergrund.png");
+ background-image:url("/background-bewerbung.jpg");
  background-repeat:no-repeat; 
  background-size: cover;      
  overflow:hidden;  
@@ -15,7 +15,7 @@ html, body {
   top:0;                     ! Position oben;
   left:0;                    ! Position ganz links;
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
-  background-color:rgb(16,78,139);    ! Hintergrundfarbe;
+  background-color:rgba(238,58,140,0.5);    ! Hintergrundfarbe;
   width:100%;                ! Breite des Kopfbereichs;
   height:100px;              ! Höhe des Kopfbereichs;
   z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
@@ -40,7 +40,7 @@ html, body {
   top: 100px;                ! Position unterhalb des Kopfbereiches;
   left:0;                    ! Position ganz links;
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
-  background-color:red;      ! Hintergrundfarbe;
+  background-color:rgba(238,58,140,0.5);      ! Hintergrundfarbe;
   width:200px;               ! Breite des Navibereichs;
   min-height:300px;          ! Minimal-Höhe des Navibereichs;
   z-index:2;                 ! Navibereich überlagert andere Bereiche;
@@ -59,7 +59,7 @@ html, body {
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
   height:100%;               ! Höhe des Textbereiches auf 100% eingestellt;
   overflow-y: auto;          ! Zeige Scrollbalken rechts, falls notwendig;
-  background-color:rgba(255,255,255,0.5); ! Hintergrund ist weiß mit 50 %iger Transparenz;
+  background-color:rgba(255,255,255,0.8); ! Hintergrund ist weiß mit 50 %iger Transparenz;
 }
 
 #newsbereich {
@@ -67,7 +67,7 @@ html, body {
   right:0px;                 ! Rechtsausrichtung;
   top: 100px;                ! Position unterhalb des Kopfbereiches;
   border: 1px solid #ccc;    ! Rahmenart und -farbe;
-  background-color:yellow;   ! Hintergrundfarbe;
+  background-color:rgba(238,58,140,0.5);   ! Hintergrundfarbe;
   width:200px;               ! Breite des Newsbereichs;
   min-height:300px;          ! Minimal-Höhe des Newsbereichs;
   z-index:2;                 ! Newsbereich überlagert andere Bereiche;
