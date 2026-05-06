@@ -59,6 +59,10 @@ app.get("/berufsbildung", (request, response) => {
 app.get("/kontakt", (request, response) => {
   response.sendFile(`${__dirname}/views/kontakt.html`);
 });
+// Routing der impressum.html als /impressum
+app.get("/impressum", (request, response) => {
+  response.sendFile(`${__dirname}/views/impressum.html`);
+});
 
 
 // listen for requests :)
