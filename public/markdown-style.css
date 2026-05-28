@@ -18,10 +18,28 @@ margin-bottom: 10px;
   border-style: none;
   width:100%;
   max-width:400px;
-  float:left;
   margin:10px;
   margin-bottom: 10px;
 }
+/* Sonderformat Image rechtsbündig */
+img[src$='#img-right'] {
+  float:right;
+}
+/* Sonderformat Image linksbündig */
+img[src$='#img-left'] {
+  float:left;
+}
+/* Sonderformat Image groß linksbündig*/
+img[src$='#img-big-left'] {
+  float:left;
+  max-width:600px;
+}
+/* Sonderformat Image groß rechtsbündig */
+img[src$='#img-big-right'] {
+  float:right;
+  max-width:600px;
+}
+
 .markdown-body a {
   font-size: 110%;
   text-decoration: none;
@@ -72,7 +90,7 @@ margin-bottom: 10px;
   font-size: 100%;;
 }
 .markdown-body hr {
-  color: black !important;
+  color: blueviolet !important;
   box-shadow: 1px 1px grey, 2px 2px grey, 3px 3px grey;
 }
 .markdown-body ul {

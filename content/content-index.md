@@ -1,12 +1,26 @@
 # Willkommen auf meiner Bewerbungshomepage
-### Hier stelle ich mich vor mit meinen Fähigkeiten und Fertigkeiten.
+#### Mit dieser Website bewerbe ich mich als Anwendungsentwickler
+---
+Ich studiere zur Zeit am __BKSD__.  
+Mein Lieblingsfach ist *DV/DIFF*.  
+> EDV ist wichtig, hat schon meine Oma gesagt.
+>> EDV ist aber nicht alles !!!  
 
-Dies ist ein normaler Text.
++ Meine Programmiersprachen
+  - HTML
+  - JavaScript
+  - Node.js
++ Office-Anwendungen
+  - Excel
+  - Word
+  - PPT
 
-Ich kann
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
 
-+ gut zuhören
-+ Webseiten erstellen
-+ Mathematik
-+ Sport
-+ Kochen und Backen
+[google.com](https://google.com)
+
+![Logo](/logo-bewerbung.png#img-big-left)
