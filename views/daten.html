@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="/fonts.css" />
     <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+   <!-- Load the element definition for markdown-->
+   <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
   </head>
 
   <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_daten');}, 1000);">
@@ -27,9 +28,13 @@
     <div id="navibereich"></div><!-- Ende navibereich -->
     <div id="textbereich">
        <div class="content-block">
-            <img src="aachen_dom_hochformat.jpg" class="text-image-left" alt="Bild im Text">
-            <p>Persönliche Daten</p>
-            <p>Dies ist ein Absatz</p>
+      <zero-md src="content-daten.md">
+        <template>
+        <!-- Load external stylesheets with a `<link rel="stylesheet">` tag -->
+         <link rel="stylesheet" href="/markdown-style.css" />
+        </template>
+      </zero-md>
+
        </div><!-- Ende content-block -->
     </div><!-- Ende textbereich -->
 

@@ -1,19 +1,16 @@
 # Willkommen auf meiner Bewerbungshomepage
-#### Mit dieser Website bewerbe ich mich als Anwendungsentwickler
+#### Hiermit möchte ich mich als Fachinformatiker bewerben.
 ---
-Ich studiere zur Zeit am __BKSD__.  
-Mein Lieblingsfach ist *DV/DIFF*.  
-> EDV ist wichtig, hat schon meine Oma gesagt.
->> EDV ist aber nicht alles !!!  
+Ich bin zur Zeit am **BKSD** ein Schüler der HöHa.  
+Mein Lieblingsfach ist _DV/DIFF_. 
+> EDV ist sehr wichtig, das hat schon meine Oma gesagt.
+>> EDV ist aber nicht alles.  
 
-+ Meine Programmiersprachen
-  - HTML
-  - JavaScript
-  - Node.js
-+ Office-Anwendungen
-  - Excel
-  - Word
-  - PPT
+Meine Programmiersprachen sind:
++ HTML
++ JavaScript
+  - auch Node.js
++ CSS
 
 | Option | Description |
 | ------ | ----------- |

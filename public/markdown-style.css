@@ -90,7 +90,7 @@ img[src$='#img-big-right'] {
   font-size: 100%;;
 }
 .markdown-body hr {
-  color: blueviolet !important;
+  color: red !important;
   box-shadow: 1px 1px grey, 2px 2px grey, 3px 3px grey;
 }
 .markdown-body ul {
